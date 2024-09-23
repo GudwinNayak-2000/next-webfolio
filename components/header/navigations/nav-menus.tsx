@@ -12,7 +12,7 @@ const NavMenu = (props: Props) => {
       <ul className={clsx('hidden gap-8 items-center','lg:flex')}>
         {
           routes && routes.map((item,idx)=>(
-            <li>
+            <li key={idx}>
                <NavLink title={item.title} href={item.href} icon={item.icon}/>
             </li>
           ))
