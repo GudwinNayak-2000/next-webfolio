@@ -15,8 +15,8 @@ type Props = {}
 const HeaderOne = (props: Props) => {
   const isScrolled =useOnScroll(100)
   return (
-    <header className={clsx('transition-all absolute h-[72px] top-0 bg-transparent inset-x-0 z-[1000]',
-      isScrolled && 'animate-moov-down absolute top-0 sticky backdrop-blur shadow-sm dark:shadow-slate-500'
+    <header className={clsx('transition-all sticky h-[72px] top-0 bg-transparent inset-x-0 z-[1000]',
+      isScrolled && 'animate-move absolute top-0 backdrop-blur shadow-sm dark:shadow-slate-500'
   )}>
       <QuickAccess />
       <Container>

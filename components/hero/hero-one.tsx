@@ -1,19 +1,19 @@
 import Container from '@/components/ui/container'
 import React from 'react'
-// import HeroTitle from './subs/hero-title'
-// import HeroCta from './subs/hero-cta'
-// import HeroTeck from './subs/hero-teck'
-// import HeroImage from './subs/hero-image'
+
 import clsx from 'clsx'
 import { CodeIcon, HeartIcon, SparklesIcon } from '@/components/ui/icons'
 import FeaturedCard from '../cards/featuredCard'
 import HeroTitle from './subs/hero-title'
 import HeroCta from './subs/hero-cta'
 import HeroTech from './subs/hero-tech'
+import HeroImage from './subs/hero-image'
 
 const HeroOne = () => {
+ 
     return (
-        <div className={clsx('pt-36 bg-grid-slate-100/100 [mask-image:linear-gradient(black,black,black)] ', 'dark:bg-grid-slate-900/100')}>
+        <div className={clsx('pt-36 bg-grid-slate-100/100 [mask-image:linear-gradient(black,black,black)] ',
+         'dark:bg-grid-slate-900/100 dark:[mask-image:linear-gradient(black,black,black)]')}>
             <Container>
                 <div className='grid grid-cols-1 lg:grid-cols-2 h-full w-full'>
                     <div className='flex flex-col gap-8 h-full justify-center'>
@@ -21,8 +21,8 @@ const HeroOne = () => {
                         <HeroCta/>
                         {/* <HeroTech/> */}
                     </div>
-                    <div className='hidden lg:block'>
-                        {/* <HeroImage /> */}
+                    <div className='hidden lg:block relative'>
+                      <HeroImage/>
                     </div>
                 </div>
                 <div className='flex gap-4 justify-center flex-wrap lg:flex-nowrap mt-20 lg:mt-0'>

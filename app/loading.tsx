@@ -1,11 +1,14 @@
+'use client'
+
 import React from 'react'
+import HashLoader from 'react-spinners/HashLoader'
 
-type Props = {}
-
-const loading = (props: Props) => {
+const Loading = () => {
   return (
-    <div>loading here</div>
+   <div className="min-h-screen w-full bg-white flex justify-center items-center">
+     <HashLoader color='#980341' size={24}/>
+   </div>
   )
 }
 
-export default loading
+export default Loading

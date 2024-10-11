@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import React from 'react'
 import { m, useAnimationControls } from 'framer-motion'
-
+import Hand from '@/public/images/waving-hand.png'
 
 const HeroTitle = () => {
 
@@ -56,7 +56,7 @@ const HeroTitle = () => {
                             });
                         }}
                         className='w-7 md:w-10'
-                        src="/emojis/love-you-gesture.png" alt='emoji' width={48} height={48} priority />
+                        src={Hand} alt='emoji' width={48} height={48} priority />
                 </m.div>
             </m.div>
             <div>
@@ -65,7 +65,7 @@ const HeroTitle = () => {
                     animate={animation.show}
                     transition={{ delay: 0.2 }}
                     className={clsx(
-                        'inline-flex gap-4 text-2xl md:text-6xl font-bold capitalize leading-none tracking-tightest mb-7'
+                        'inline-flex gap-4 text-2xl md:text-6xl font-bold capitalize leading-none tracking-tightest mb-4'
                     )}>
                     <span className='text-slate-700 dark:text-slate-300'>I&apos;m</span>
                     <strong className={clsx('text-primary-900', 'dark:text-primary-300')}>Gudwin</strong>

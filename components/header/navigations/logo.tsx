@@ -11,7 +11,7 @@ const Logo = ({ active = false }: { active?: boolean }) => {
                     [
                         active
                             ? 'border-primary-900 bg-primary-900 dark:border-primary-500 dark:bg-primary-500'
-                            : 'border border-2 border-primary-900 dark:border-white',
+                            : 'border border-primary-900 dark:border-white',
                     ]
                 )}
             >

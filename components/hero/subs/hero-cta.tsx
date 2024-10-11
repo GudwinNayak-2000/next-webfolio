@@ -37,8 +37,8 @@ const HeroCta = () => {
                 variants={animation}
                 transition={{ delay: 0.5 }}
             >
-                <Button variant="primary_tranparent">
-                    <Link href="/" className='inline-flex gap-1 text-xl items-center'>
+                <Button variant='primary_transparent'>
+                    <Link href="" className='inline-flex gap-1 text-xl items-center'>
                         <FileText className="mr-2 h-6 w-6" />
                         <span>
                             resume

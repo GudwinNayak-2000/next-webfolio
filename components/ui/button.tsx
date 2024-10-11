@@ -19,7 +19,8 @@ const buttonVariants = cva(
         ghost: "hover:bg-neutral-100 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50",
         link: "text-neutral-900 underline-offset-4 hover:underline dark:text-neutral-50",
         primary_full: "text-neutral-900 underline-offset-4 hover:underline dark:text-neutral-50 capitalize bg-primary-900 text-white font-bold text cursor-pointer rounded-lg",
-        primary_tranparent: "text-neutral-900 underline-offset-4 hover:underline dark:text-neutral-50 capitalize  cursor-pointer font-bold text cursor-pointer",
+        primary_outline:"text-neutral-900 underline-offset-4 hover:underline dark:text-neutral-50 capitalize text-white font-bold cursor-pointer ",
+        primary_transparent: "text-neutral-900 underline-offset-4 hover:underline dark:text-neutral-50 capitalize  cursor-pointer font-bold text cursor-pointer",
       },
       size: {
         default: "h-10 px-4 py-2",

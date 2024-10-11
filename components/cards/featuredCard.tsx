@@ -16,6 +16,7 @@ function FeaturedCard({ icon, title, desc }: FeaturedCardProps) {
                 'dark:border-divider-dark dark:bg-slate-900'
             )}
         >
+           
             <div
                 className={clsx(
                     'border-divider-light absolute inset-x-0 inset-y-8 z-[-1] border-t',
