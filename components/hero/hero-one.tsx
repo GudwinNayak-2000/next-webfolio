@@ -19,7 +19,7 @@ const HeroOne = () => {
                     <div className='flex flex-col gap-8 h-full justify-center'>
                         <HeroTitle />
                         <HeroCta/>
-                        {/* <HeroTech/> */}
+                        <HeroTech/>
                     </div>
                     <div className='hidden lg:block relative'>
                       <HeroImage/>

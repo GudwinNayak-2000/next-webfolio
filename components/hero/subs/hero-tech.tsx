@@ -10,9 +10,9 @@ import { PiFramerLogoLight } from "react-icons/pi";
 import {
     Tooltip,
     TooltipContent,
+    TooltipProvider,
     TooltipTrigger,
 } from "@/components/ui/tooltip"
-import { Button } from '@/components/ui/button';
 
 const HeroTech = () => {
 
@@ -43,9 +43,9 @@ const HeroTech = () => {
                     <div>
                             <Tooltip>
                                 <TooltipTrigger asChild>
-                                    <Button>
+                                    <button>
                                         <RiNextjsLine className={clsx('h-6 w-6')} />
-                                    </Button>
+                                    </button>
                                 </TooltipTrigger>
                                 <TooltipContent>
                                     <p>Next js</p>
@@ -57,9 +57,9 @@ const HeroTech = () => {
                     <div>
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Button>
+                                <button>
                                     <FaReact className={clsx('h-6 w-6')} />
-                                </Button>
+                                </button>
                             </TooltipTrigger>
                             <TooltipContent>
                                 <p>React js</p>
@@ -71,9 +71,9 @@ const HeroTech = () => {
                     <div>
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Button>
+                                <button>
                                     <TbBrandTypescript className={clsx('h-6 w-6')} />
-                                </Button>
+                                </button>
                             </TooltipTrigger>
                             <TooltipContent>
                                 <p>Typescript</p>
@@ -85,9 +85,9 @@ const HeroTech = () => {
                     <div>
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Button>
+                                <button>
                                     <SiTailwindcss className={clsx('h-6 w-6')} />
-                                </Button>
+                                </button>
                             </TooltipTrigger>
                             <TooltipContent>
                                 <p>Tailwind CSS</p>
@@ -99,9 +99,9 @@ const HeroTech = () => {
                     <div>
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Button>
+                                <button>
                                     <SiShadcnui className={clsx('h-6 w-6')} />
-                                </Button>
+                                </button>
                             </TooltipTrigger>
                             <TooltipContent>
                                 <p>Shadcn UI</p>
@@ -113,9 +113,9 @@ const HeroTech = () => {
                     <div>
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Button>
+                                <button>
                                     <PiFramerLogoLight className={clsx('h-6 w-6')} />
-                                </Button>
+                                </button>
                             </TooltipTrigger>
                             <TooltipContent>
                                 <p>Framer Motion</p>

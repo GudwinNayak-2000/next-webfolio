@@ -1,5 +1,5 @@
 "use client"
-import { Dialog } from '@headlessui/react';
+import { Dialog, DialogPanel } from '@headlessui/react';
 import clsx from 'clsx';
 import { m } from 'framer-motion';
 import { useRef } from 'react';
@@ -37,7 +37,7 @@ function QuickAccess() {
         aria-hidden={!isQuickAccessOpen}
       />
       <div className={clsx('fixed inset-0 bg-slate-200/[.95] dark:bg-slate-900/[.98]')}>
-        <Dialog.Panel>
+        <DialogPanel>
           <div
             className={clsx(
               'absolute right-4 sm:right-8 top-8 flex'
@@ -70,7 +70,7 @@ function QuickAccess() {
             </div>
            
           </div>
-        </Dialog.Panel>
+        </DialogPanel>
       </div>
     </Dialog>
   ) : null;
