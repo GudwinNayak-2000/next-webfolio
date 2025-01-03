@@ -46,19 +46,19 @@ const HeroImage = () => {
     const controlsImage = useAnimationControls();
     const controlsOutline = useAnimationControls();
     return (
-        <div className={clsx('relative h-[590px] w-[603px]')}>
-            {showIconCloud && (
-                <>
+        <div className={clsx('relative h-full w-full')}>
+            {showIconCloud ? (
+                <div className=''>
                     <IconCloud iconSlugs={slugs} />
-                </>
-            )}
+                </div>
+            ): null}
             <div
                 className={clsx(
                     '',
                     ''
                 )}
             >
-                <div className={clsx('absolute top-[50%] left-[50%] translate-y-[-50%] h-[600px] w-[500px] translate-x-[-50%] justify-center items-center flex overflow-hidden')}>
+                <div className={clsx('absolute top-[50%] translate-y-[-50%] left-[50%] h-[400px] w-[400px] translate-x-[-50%] justify-center items-center flex overflow-hidden')}>
                     <m.div
                         className={clsx('')}
                         initial={{ opacity: 1 }}
@@ -86,7 +86,7 @@ const HeroImage = () => {
                     </m.div>
 
                     <m.div
-                        className={clsx('absolute')}
+                        className={clsx('absolute top-[50%] left-[50%] translate-y-[-50%] h-[450px] w-[450px] translate-x-[-50%] justify-center items-center flex overflow-hidden')}
                         initial={{ opacity: 0 }}
                         animate={controlsImage}
                     >
@@ -94,15 +94,16 @@ const HeroImage = () => {
                         <Image
                             alt="Gudwin Nayak illustration"
                             src="/images/cute.png"
-                            // layout='responsive'
-                            width={400}
-                            height={500}
+                            layout="fill"
+                            // height={400}
+                            // width={400}
                             className={clsx(
                                 'hidden max-w-none',
                                 'lg:block',
                                 'dark:brightness-[.82]'
                             )}
                             quality={100}
+                            objectFit='cover'
                             priority
                         />
                     </m.div>
